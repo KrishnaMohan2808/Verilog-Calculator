@@ -1,2 +1,21 @@
 # Verilog-Calculator
-This project implements an 8-bit Arithmetic and Logic Calculator in Verilog. The calculator performs various arithmetic and bitwise operations based on a 3-bit opcode. A testbench is provided to verify the functionality, and GTKWave can be used to visualize the signals.
+
+This project implements an 8-bit calculator in Verilog that supports:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Modulo
+- Bitwise AND, OR, XOR
+
+## How to Run
+1. Compile with Icarus Verilog.
+ iverilog -o calculator_tb.out Calculator_tb.v Calculator.v
+
+2. Run the simulation.
+ vvp calculator_tb.out
+
+3.View Waveform in GTKWave.
+ gtkwave calculator_wave.vcd
+
+
